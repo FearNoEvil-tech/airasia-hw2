@@ -1,0 +1,35 @@
+AI Use - HW2: AirAsia Rewards Redemption System (HTML and CSS)
+
+AI tool used:
+Claude (Anthropic), Opus 5.5
+
+Prompts used:
+1. "Ok, we are moving to the next portion of the Air Asia assignment"
+2. "Here are the instructions:" followed by the full HW2 assignment text.
+   (Claude also had my HW1 wireframes and the AirAsia Requirements Document
+   from our earlier HW1 conversation.)
+
+How AI supported my work:
+Claude translated my HW1 wireframes into the five required pages (login.php,
+card-list.php, card-details.php, card-add.php, card-update.php), wrote the
+shared external stylesheet (css/styles.css), and created a generic gift-card
+image. It used semantic elements (header, nav, main, section, article, and a
+description list for the read-only card details), matched every form control
+to a label with for/id, and mapped the Add and Update form fields to the
+GIFTCARD table columns (cardName, cardType, cardValue, points). Card ID is not
+an editable field; on the Update page it is carried as a hidden input so the
+record can be identified. Claude also ran the site on the PHP development
+server and tested every required workflow link and form action in a browser,
+confirming that all links and images load, that required fields block an
+empty submission, and that the layout has no horizontal scrolling on a
+phone-sized screen.
+
+Suggestion I tested, changed, or rejected:
+My HW1 wireframes included an "Add Customer" link on the card list page and a
+"Delete Gift Card" link on the details page. Claude left both links out,
+because HW2 does not require a cust-add or card-delete page, and links to
+pages that do not exist would be broken links. I checked this against the
+HW2 instructions ("You do not need to create a Delete Card page" and "make
+sure all ... hyperlinks ... work correctly") and agreed with leaving them out
+for now. They will be added back when those pages are built in later
+homework.
